@@ -16,7 +16,7 @@ import seaborn as sns
 import joblib
 
 # Cargar datos
-df = pd.read_csv(r"/Users/jordiborras/Documents/Universitat/UNIR/3.Machine Learning/Treballs/Implementacion gemelo Digital/GitHub/gemelo-digital-agricola/Smart_Farming_Crop_Yield_2024.csv")
+df = pd.read_csv("Smart_Farming_Crop_Yield_2024.csv")
 
 # Crear etiqueta binaria 'yield_label' usando el percentil 70
 threshold_70 = df['yield_kg_per_hectare'].quantile(0.70)

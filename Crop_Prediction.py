@@ -17,7 +17,7 @@ from sklearn.metrics import classification_report
 import matplotlib.pyplot as plt
 
 # Cargar el dataset
-df = pd.read_csv(r"/Users/jordiborras/Documents/Universitat/UNIR/3.Machine Learning/Treballs/Implementacion gemelo Digital/GitHub/gemelo-digital-agricola/Smart_Farming_Crop_Yield_2024.csv")
+df = pd.read_csv("Smart_Farming_Crop_Yield_2024.csv")
 
 # Crear una etiqueta binaria: 1 = Alta producción (>= percentil 70), 0 = No Alta
 threshold_70 = df['yield_kg_per_hectare'].quantile(0.70)
